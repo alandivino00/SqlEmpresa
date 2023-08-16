@@ -1,0 +1,20 @@
+Create table Empresa
+
+(
+    codigo_departamento int,
+    nome varchar(40),
+    login varchar(40),
+    email varchar(40)
+)
+
+INSERT INTO Empresa VALUES (1, 'Pedro Pereira', 'PPereira', 'pedro@email.com')
+
+IF EXISTS (SELECT *)
+   UPDATE
+   Empresa
+   SET
+   nome= 'Pedro Pereira santos',
+   login= 'PPereira95',
+   email= 'pedro95@email.com'
+   WHERE
+   codigo_departamento = 1
